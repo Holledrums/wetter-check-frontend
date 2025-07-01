@@ -41,9 +41,7 @@ export const WeatherCard: React.FC<WeatherCardProps> = ({ forecast }) => {
         💨 {forecast.windspeed} aus{" "}
         {getCardinalDirection(forecast.winddirection)}
       </p>
-      <p className="text-lg">
-        🌧️ {decodePrecipitation(forecast.precipitation)}
-      </p>
+      <p className="text-lg">🌧️ {forecast.precipitation}</p>
     </div>
   );
 };

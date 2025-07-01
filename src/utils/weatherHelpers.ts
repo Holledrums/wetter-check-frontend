@@ -1,5 +1,4 @@
 export function getCardinalDirection(dir: string): string {
-  // Optional: du kannst auch direkt Himmelsrichtungen vom Backend liefern
   return dir;
 }
 
@@ -15,15 +14,34 @@ export function decodePrecipitation(raw: string): string {
 
 export function getWeatherEmoji(desc: string): string {
   const map: Record<string, string> = {
-    Sonnig: "☀️",
+    "Klarer Himmel": "☀️",
+    "Überwiegend klar": "🌤️",
     "Teilweise bewölkt": "🌤️",
     Bedeckt: "☁️",
-    "Leichter Regen": "🌦️",
-    Regen: "🌧️",
-    "Starker Regen": "🌧️🌧️",
-    Gewitter: "⛈️",
-    Schnee: "❄️",
     Nebel: "🌫️",
+    "Reifiger Nebel": "🌫️",
+    "Leichter Nieselregen": "🌦️",
+    "Mäßiger Nieselregen": "🌧️",
+    "Starker Nieselregen": "🌧️",
+    "Leichter gefrierender Nieselregen": "❄️🌧️",
+    "Starker gefrierender Nieselregen": "❄️🌧️",
+    "Leichter Regen": "🌦️",
+    "Mäßiger Regen": "🌧️",
+    "Starker Regen": "🌧️🌧️",
+    "Leichter gefrierender Regen": "❄️🌧️",
+    "Starker gefrierender Regen": "❄️🌧️",
+    "Leichter Schneefall": "🌨️",
+    "Mäßiger Schneefall": "🌨️",
+    "Starker Schneefall": "❄️❄️",
+    Schneekörner: "❄️",
+    "Leichte Regenschauer": "🌦️",
+    "Mäßige Regenschauer": "🌧️",
+    "Heftige Regenschauer": "🌧️🌧️",
+    "Leichte Schneeschauer": "🌨️",
+    "Starke Schneeschauer": "❄️❄️",
+    Gewitter: "⛈️",
+    "Gewitter mit leichtem Hagel": "⛈️🌨️",
+    "Gewitter mit starkem Hagel": "⛈️❄️",
     Unbekannt: "❓",
   };
 
