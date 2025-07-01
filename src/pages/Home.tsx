@@ -21,8 +21,8 @@ export const Home = () => {
 
   return (
     <main className="flex flex-col items-center gap-6 p-6 bg-blue-100 min-h-screen">
-      <h1 className="text-2xl font-bold">🌤️ Weather for {city}</h1>
-      <div className="flex flex-wrap justify-center gap-4">
+      <h1 className="text-2xl font-bold">🌤️ Wetter für {city}</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {forecast.map((entry, index) => (
           <WeatherCard key={index} forecast={entry} />
         ))}
